@@ -1,15 +1,67 @@
 .callout {
-	
+    background-color: #1e4174;
+    /* deep navy blue */
+    color: #ffffff;
+    /* high contrast */
+    font-family: "PT Serif", "Times New Roman", serif;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    position: relative;
 }
 
+/* Right-aligned framed image: white outer border + thin black inner border */
 .callout img {
-	
+    float: right;
+    margin: 0 0 1rem 1.5rem;
+    /* space from text */
+    border: 6px solid #ffffff;
+    /* white outer frame */
+    box-shadow: 0 0 0 1px #000000;
+    /* thin black inner line */
+    max-width: 40%;
+    height: auto;
 }
 
+/* Scripture text */
 blockquote {
-	
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
+blockquote p {
+    margin: 0 0 0.75rem;
+}
+
+/* Dotted separator and italic reference */
 cite {
-	
+    display: block;
+    margin-top: 1rem;
+    padding-top: 0.7rem;
+    border-top: 1px dotted #ffffff;
+    /* dotted line above reference */
+    font-style: italic;
+    font-size: 0.95rem;
+    text-align: right;
+}
+
+/* Responsive: stack image above text on small screens */
+@media (max-width: 600px) {
+    .callout {
+        padding: 1.25rem;
+    }
+
+    .callout img {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem auto;
+        max-width: 70%;
+    }
+
+    cite {
+        text-align: center;
+    }
 }
