@@ -78,8 +78,9 @@ p {
 /* Footer */
 footer {
     margin-top: 15px;
-    /* required: margin-top */
+    /* separates footer from main content */
     border-top: 1px solid #000;
-    /* required: border-top */
+    /* top border for distinction */
     text-align: center;
-    /* required: text-align: center */
+    /* center the footer text */
+}
