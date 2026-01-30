@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Navigation bar */
 nav {
     background-color: #333;
@@ -42,6 +48,7 @@ main img {
     /* required: padding */
     box-shadow: 0 0 10px rgba(0 0 0 / 0.3);
     /* required: box-shadow */
+    float: right;
 }
 
 /* Aside styles */
@@ -83,4 +90,17 @@ footer {
     /* required: border-top */
     text-align: center;
     /* required: text-align: center */
+}
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid #000; /* Example border */
+    padding: 1rem;
+    background-color: #f0f0f0; /* Example background color */
+    color: #333; /* Example text color */
+}
+
+/* Aside CSS rule */
+aside {
+    /* Remove margin, padding, and background-color from here */
 }
