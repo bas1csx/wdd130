@@ -7,90 +7,67 @@
 /* Navigation bar */
 nav {
     background-color: #333;
-    /* required: background-color */
     padding: 10px;
-    /* required: padding */
 }
 
 /* Navigation links */
 nav a {
     color: white;
-    /* required: color */
     padding: 10px;
-    /* required: padding */
     display: block;
-    /* required: display: block */
     text-decoration: none;
 }
 
 /* Main content */
 main {
     max-width: 840px;
-    /* required: max-width */
     margin: 0 auto;
 }
 
 /* Main heading */
 h1 {
     color: #1e4174;
-    /* required: color */
 }
 
 /* Images inside main */
 main img {
     width: 150px;
-    /* required: width */
     height: auto;
-    /* required: height */
     border: 1px solid #333;
-    /* required: border */
     padding: 4px;
-    /* required: padding */
-    box-shadow: 0 0 10px rgba(0 0 0 / 0.3);
-    /* required: box-shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     float: right;
 }
 
 /* Aside styles */
 aside {
     width: 20rem;
-    /* required: width */
     margin: 1rem;
-    /* required: margin */
-    border: 1px solid rgb(0 0 0 / 0.2);
-    /* required: border */
+    border: 1px solid rgb(0, 0, 0, 0.2);
     padding: 1rem;
-    /* required: padding */
     background-color: #eee;
-    /* required: background-color */
     color: #333;
-    /* required: color */
     text-align: center;
 }
 
 /* Image inside aside */
 aside img {
     width: 200px;
-    /* required: width: 200px */
     height: auto;
-    /* required: height: auto */
 }
 
 /* Paragraphs */
 p {
     padding: 0;
-    /* required: padding: 0; */
 }
 
 /* Footer */
 footer {
     margin-top: 15px;
-    /* required: margin-top */
     border-top: 1px solid #000;
-    /* required: border-top */
     text-align: center;
-    /* required: text-align: center */
 }
+
 /* Class Selectors */
 .box {
     margin: 1rem;
@@ -100,7 +77,17 @@ footer {
     color: #333; /* Example text color */
 }
 
-/* Aside CSS rule */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 aside {
-    /* Remove margin, padding, and background-color from here */
+    position: relative;
+}
+
+img.profile {
+    float: right;
+    margin-left: 20px;
 }
