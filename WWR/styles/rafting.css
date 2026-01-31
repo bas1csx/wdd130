@@ -1,0 +1,144 @@
+:root {
+  --primary-color: #2a9d8f; /* teal */
+  --secondary-color: #e9c46a; /* light golden yellow */
+  --accent1-color: #264653; /* dark slate blue */
+  --accent2-color: #f4a261; /* warm sand */
+  --heading-font: "Arial Black", "Arial", sans-serif;
+  --body-font: "Verdana", "Geneva", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: var(--accent1-color);
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+header nav a:hover {
+  background-color: var(--primary-color);
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--accent1-color);
+  color: white;
+  padding: 30px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.socialmedia img {
+  width: 32px;
+  height: 32px;
+  transition: opacity 0.3s;
+}
+
+.socialmedia img:hover {
+  opacity: 0.7;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff; /* white text */
+}
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+.hero article {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: rgba(42, 157, 143, 0.98);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hero article img {
+  width: 125px;
+  height: auto;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.hero article p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
