@@ -70,21 +70,15 @@ h1, h2 {
 
 /* History Section Layout */
 .history {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 30px;
-  align-items: start;
   margin: 40px 16px;
   padding: 20px;
 }
 
 .history h2 {
-  grid-column: 1;
-  margin: 0;
+  margin-bottom: 15px;
 }
 
 .history p {
-  grid-column: 2;
   margin: 0;
   padding: 0;
 }

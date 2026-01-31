@@ -13,37 +13,96 @@
 <body>
     <header>
         <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <div class="nav-brand">
+                <h3>Prince Collins</h3>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="wwr/">Rafting Website</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </div>
         </nav>
     </header>
+
     <main>
-        <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple." width="200">
-        <h1>Prince Collins | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Hello, my name is Prince Collins" width="200">
-        <p>Hello! My name is Prince Collins and I am from Nairobi, Kenya. I enjoy learning new things and expanding my horizons. I am currently a student in the BYU program for software development undertaking Web fundamentals and programming with functions. I look forward to meeting new people of a similar background and mindset. Hope I do well.</p>
+        <!-- Hero Section with Overlay -->
+        <section class="hero">
+            <div class="hero-image">
+                <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple">
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h1>Prince Collins</h1>
+                        <p class="hero-subtitle">WDD 130 | Web Development Student</p>
+                        <p class="hero-description">Passionate about creating beautiful, functional web experiences</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hello! My name is Prince Collins and I am from Nairobi, Kenya. I enjoy learning new things and expanding my horizons. I am currently a student in the BYU program for software development undertaking Web fundamentals and programming with functions. I look forward to meeting new people of a similar background and mindset.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Prince Collins - Web Development Student">
+                </div>
+            </div>
+        </section>
+
+        <!-- Temple Links Section -->
+        <section class="temples">
+            <h2>Temple Links</h2>
+            <div class="temple-grid">
+                <div class="temple-card">
+                    <a href="https://www.churchofjesuschrist.org/temples/temple-details?lang=eng" target="_blank" rel="noopener noreferrer">
+                        <div class="card-overlay">
+                            <h3>Salt Lake Temple</h3>
+                            <p>Historic temple in Utah</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="temple-card">
+                    <a href="https://www.churchofjesuschrist.org/temples/temple-details/temple/congo-drc?lang=eng" target="_blank" rel="noopener noreferrer">
+                        <div class="card-overlay">
+                            <h3>Kinshasa Temple</h3>
+                            <p>Democratic Republic of the Congo</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="temple-card">
+                    <a href="https://www.churchofjesuschrist.org/temples/temple-details/temple/okinawa?lang=eng" target="_blank" rel="noopener noreferrer">
+                        <div class="card-overlay">
+                            <h3>Tokyo Japan Temple</h3>
+                            <p>Beautiful temple in Japan</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location">
+            <div class="location-image">
+                <img src="images/nairobi-city.jpg" alt="A view of Nairobi, Kenya">
+                <div class="location-overlay">
+                    <div class="location-content">
+                        <h2>Nairobi, Kenya</h2>
+                        <p>Nairobi is the capital city of Kenya, known for its vibrant culture, modern skyline, and proximity to Nairobi National Park, where wildlife roams just outside the city.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <ul>
-        <li><a href="https://www.churchofjesuschrist.org/temples/temple-details?lang=eng" target="_blank" rel="noopener noreferrer">Salt Lake Temple</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/temples/temple-details/temple/congo-drc?lang=eng" target="_blank" rel="noopener noreferrer">Kinshasa Democratic Republic of the Congo Temple</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/temples/temple-details/temple/okinawa?lang=eng" target="_blank" rel="noopener noreferrer">Tokyo Japan Temple</a></li>
-    </ul>
-
-    <aside>
-        <h2>Nairobi, Kenya</h2>
-        <img src="images/nairobi-city.jpg" alt="A view of Nairobi, Kenya">
-        <p>Nairobi is the capital city of Kenya, known for its vibrant culture, modern skyline, and proximity to Nairobi National Park, where wildlife roams just outside the city.</p>
-    </aside>
-
-    <div style="position: relative;">
-        <h2 style="position: absolute; top: 20px; left: 20px; color: white;">State/Country Heading</h2>
-    </div>
-
     <footer>
-        <p>© 2026 ⚫ Prince Collins ⚫ Nairobi, Kenya</p>
+        <div class="footer-content">
+            <p>© 2026 Prince Collins | Nairobi, Kenya</p>
+            <p>Web Development Student | BYU Pathway</p>
+        </div>
     </footer>
 </body>
 
