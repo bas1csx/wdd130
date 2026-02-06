@@ -1,59 +1,112 @@
+/* CSS Variables */
+:root {
+    --primary-color: #1e4174;
+    --dark-bg: #333;
+    --light-bg: #eee;
+    --text-dark: #333;
+    --text-light: white;
+    --border-color: #000;
+    --border-light: rgba(0, 0, 0, 0.2);
+    --border-overlay: rgba(0, 0, 0, 0.6);
+    --font-family: Arial, sans-serif;
+    --max-width: 840px;
+    --spacing-small: 10px;
+    --spacing-medium: 1rem;
+    --spacing-large: 20px;
+    --border-width: 1px;
+    --shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Universal Selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+}
+
+/* Header, Footer, and Grid - Max width and centered */
+header, footer, .grid {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
 /* Navigation bar */
 nav {
-    background-color: #333;
-    padding: 10px;
+    background-color: var(--dark-bg);
+    padding: var(--spacing-small);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Navigation links */
 nav a {
-    color: white;
-    padding: 10px;
     display: block;
+    padding: 0.5rem;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
-/* Main content */
-main {
-    max-width: 840px;
-    margin: 0 auto;
-}
-
-/* Main heading */
+/* Main heading with bottom border */
 h1 {
-    color: #1e4174;
+    color: var(--primary-color);
+    border-bottom: var(--border-width) solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: var(--spacing-medium);
+}
+
+/* Grid layout - aside on left, main on right */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--spacing-large);
 }
 
 /* Images inside main */
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #333;
+    border: var(--border-width) solid var(--dark-bg);
     padding: 4px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow);
     float: right;
+}
+
+/* Profile image float */
+img.profile {
+    float: right;
+    margin-left: var(--spacing-large);
 }
 
 /* Aside styles */
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    position: relative;
     text-align: center;
 }
 
 /* Image inside aside */
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
+}
+
+/* Aside heading with absolute positioning */
+aside h2 {
+    position: absolute;
+    top: var(--spacing-small);
+    left: var(--spacing-small);
+    background-color: var(--border-overlay);
+    color: var(--text-light);
+    padding: 5px var(--spacing-small);
+    margin: 0;
 }
 
 /* Paragraphs */
@@ -64,30 +117,16 @@ p {
 /* Footer */
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--border-width) solid var(--border-color);
     text-align: center;
+    padding: var(--spacing-medium);
 }
 
 /* Class Selectors */
 .box {
-    margin: 1rem;
-    border: 1px solid #000; /* Example border */
-    padding: 1rem;
-    background-color: #f0f0f0; /* Example background color */
-    color: #333; /* Example text color */
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-aside {
-    position: relative;
-}
-
-img.profile {
-    float: right;
-    margin-left: 20px;
+    margin: var(--spacing-medium);
+    border: var(--border-width) solid var(--border-light);
+    padding: var(--spacing-medium);
+    background-color: var(--light-bg);
+    color: var(--text-dark);
 }

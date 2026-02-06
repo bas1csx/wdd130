@@ -13,8 +13,9 @@ nav ul {
     flex-wrap: wrap;
     max-width: 900px;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-between; /* Changed from space-around - items pushed to edges */
     align-items: center;
+    gap: 10px; /* Added gap for spacing between items */
 }
 
 nav a {
